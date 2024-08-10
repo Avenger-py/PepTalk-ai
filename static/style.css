@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1 {
+    /* margin: 0 0 40px 0; */
+    text-align: left;
+    /* padding-top: 20px; */
+    /* padding-right: 20px; */
+    /* padding-bottom: 10px; */
+    /* padding-left: 10px; */
+}
+
+/* form {
+    margin-bottom: 0px;
+} */
+
+form {
+    width: 100%;
+    /* position: relative; */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex; /* or inline-block, depending on your layout */
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.button-container {
+    /* width: 200px; */
+    /* height: 200px; */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    /* padding-right: 10px; */
+    margin-left: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    font-size: clamp(10px, 2vw, 18px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(145deg, #ff1a1a, #e60000);
+    /* -webkit-tap-highlight-color: transparent; */
+}
+/* PC-specific rules */
+@media (hover: hover) and (pointer: fine) {
+    .button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .button:active {
+        transform: translateY(4px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Mobile-specific rules */
+@media (hover: none) and (pointer: coarse) {
+    .button:active {
+        transform: translateY(4px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .button:focus:not(:active) {
+        transform: translateY(0);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Common focus rule */
+.button:focus {
+    outline: none;
+}
+
+
+input {
+    /* align-items: left; */
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: 40px;
+    padding: 12px 10px 10px 10px; /* Add padding for text and button space */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in width */
+    
+}
+
+
+
+#outputText {
+    width: 100%;
+    /* position: relative; */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex; /* or inline-block, depending on your layout */
+    flex-grow: 1;
+    justify-content: center;
+}

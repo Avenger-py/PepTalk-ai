@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>PepTalk AI</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>PepTalk AI</h1>
+        <div class="button-container">
+            <form action="/generate" method="post">
+            <input type="text" id="userInput" name="userInput" placeholder="What's going on?">
+            <button class="button" id="pepTalkButton"><strong>Give me a pep talk</strong></button>
+            </form>
+        </div>
+        <div class="output_container">
+            <div id="outputText">{{ response }}</div>
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>
