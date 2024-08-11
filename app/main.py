@@ -8,11 +8,11 @@ import google.generativeai as genai
 import os
 
 
-genai.configure(api_key="os.environ["GEMINI_API_KEY"]")
+genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="../static"), name="static")
-templates = Jinja2Templates(directory="../templates")
+app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory="templates")
 
 prompt = ""
 response = ""
