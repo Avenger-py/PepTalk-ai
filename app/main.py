@@ -41,5 +41,3 @@ async def generate(request: Request, userInput: str = Form(default=".")):
         pass
         # response = "Error: either API calls are exhausted or an error occured. Please try again."
     return RedirectResponse(url="/", status_code=303)
-
-# @app.get("/", response_class=HTMLResponse)
